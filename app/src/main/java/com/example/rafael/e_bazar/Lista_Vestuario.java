@@ -1,9 +1,9 @@
 package com.example.rafael.e_bazar;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class Lista_Vestuario extends AppCompatActivity {
+public class Lista_Vestuario extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

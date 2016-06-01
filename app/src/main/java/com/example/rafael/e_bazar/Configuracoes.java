@@ -2,14 +2,25 @@ package com.example.rafael.e_bazar;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-/**
- * Created by rafael on 27/05/16.
- */
-public class Configuracoes extends Activity{
+public class Configuracoes extends Activity {
+
+    Button btnVoltar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Configuracoes);
+        setContentView(R.layout.activity_configuracoes);
+
+        btnVoltar = (Button) findViewById(R.id.btnVoltar);
+
+        btnVoltar.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+              finish();
+            }
+        });
     }
+
 }
