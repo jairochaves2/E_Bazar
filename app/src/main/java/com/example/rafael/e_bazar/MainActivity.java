@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         btnCadastrar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
 
-                intent.setClass(MainActivity.this, Cadastrar.class);
+                intent.setClass(MainActivity.this, Cadastro_Ong.class);
                 startActivity(intent);;
             }
         });
