@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_c6f367d34c52e0ab40fa66c4c6b3ec1573c686bb.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5ae4275939d0da375a7a77b527b26c332d59d0bc">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_bd5a2f4342a6c3c9716bff61143b635ddfc94c10.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_fe479bb49399cd8261bbe43313a9fde2aad7dc73.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_4af223f67a20f8d76132b651de06169636632d30.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_e7eb02bf753432131acd098cbee306d952531c29.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="360bcfb17de30b8974ea4d871f46ab14384e63b5">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/pre-dexed/debug/instant-run_ca23342d3d5d0f51a13fcea61d60d888887b8c14.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_f1ac0a5abc434b66f17864a146c3570aa0704ed0.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a781a6de4759cd3bf4016b9fa086e07eaee6e08c">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_5772f402f8b7786a25e2c85649bb4d8faf33562f.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_c74e941e08be77ea5e98071cc62022f23e436d42.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_ff838157cdd2dc3cc8ca687cdd0812d4a14a225d.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_3a9cbb6e18455bee1c6ce6697ade3c51880539ff.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="145ec8e9e147f5c2b140dec37a424dce87a77cac">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/instant-run_5c1a307194788157e240c31a0e8db10a7f571b2c.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_ba6027b26e1b1ebf300a4b55da7c6256f1327596.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_4ba532f9457d1047cff70df74069afa46222fbf1.jar" />
+    </item>
+    <item
+        jar="/home/jairochaves/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/jairochaves/Área de Trabalho/E_Bazar-master/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_a7ed41e584098abfa141aec66e15e994fb4c2024.jar" />
+    </item>
+
+</items>
