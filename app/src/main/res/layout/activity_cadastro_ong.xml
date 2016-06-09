@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,106 +9,130 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#FFA500"
+    android:orientation="vertical"
     tools:context="com.example.rafael.e_bazar.Cadastro_Ong">
-
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/linearLayout2"
+            android:layout_alignParentTop="true">
+            <!--Titulo-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastro de O.N.G"
+                android:id="@+id/tVTitulo"
+                android:textColor="#000000"
+                android:background="#0000ff"
+                android:gravity="center"
+                />
+            <!--Nome-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:id="@+id/tVNome"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTNO" />
+            <!--Intuito-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Intuito"
+                android:id="@+id/tVI"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTIntuito" />
+            <!--Cidade-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Cidade"
+                android:id="@+id/tVC"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTcidade" />
+            <!--Estado-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:id="@+id/textView"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTEstado"
+                android:layout_gravity="center_horizontal" />
+            <!--Login-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/textView4"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTLogin" />
+            <!--Senha-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Senha"
+                android:id="@+id/textView5"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eTSenha" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:id="@+id/linearLayout2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+            <Button
+            android:layout_width="132dp"
             android:layout_height="wrap_content"
-            android:text="Nome"
-            android:id="@+id/tVNome"
-            android:textColor="#000000"/>
+            android:text="      Voltar     "
+            android:id="@+id/btnVoltar"
+            android:layout_alignTop="@+id/btnCadastrar"
+            android:layout_alignStart="@+id/linearLayout2" />
 
-        <EditText
-            android:layout_width="fill_parent"
+            <Button
+            android:layout_width="132dp"
             android:layout_height="wrap_content"
-            android:id="@+id/eTNO" />
+            android:text="Cadastrar "
+            android:id="@+id/btnCadastrar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/linearLayout2" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Intuito"
-            android:id="@+id/tVI"
-            android:textColor="#000000"/>
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTIntuito" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Cidade"
-            android:id="@+id/tVC"
-            android:textColor="#000000"/>
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTcidade" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Estado"
-            android:id="@+id/textView"
-            android:textColor="#000000"/>
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTEstado"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:id="@+id/textView4"
-            android:textColor="#000000" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTLogin" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Senha"
-            android:id="@+id/textView5"
-            android:textColor="#000000"/>
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTSenha" />
-
+        </LinearLayout>
     </LinearLayout>
-
-    <Button
-        android:layout_width="132dp"
-        android:layout_height="wrap_content"
-        android:text="      Voltar     "
-        android:id="@+id/btnVoltar"
-        android:layout_alignTop="@+id/btnCadastrar"
-        android:layout_alignStart="@+id/linearLayout2" />
-
-    <Button
-        android:layout_width="132dp"
-        android:layout_height="wrap_content"
-        android:text="Cadastrar "
-        android:id="@+id/btnCadastrar"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/linearLayout2" />
-
-</RelativeLayout>
+</LinearLayout>

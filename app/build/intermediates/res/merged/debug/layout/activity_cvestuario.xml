@@ -8,12 +8,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#FFA500"
+    android:background="#ffa800"
     tools:context="com.example.rafael.e_bazar.CVestuario">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:padding="10dp"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,23 +26,31 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="14dp"
         android:id="@+id/linearLayout"
         android:layout_above="@+id/btnVoltar">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cadastro de Vestuário Usado"
             android:id="@+id/tVTitulo"
-            android:textColor="#000000"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></LinearLayout>
+            android:textColor="#000000"
+            android:background="#0000ff"
+            android:gravity="center"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peça"
+                android:id="@+id/tVPeca"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                />
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#aaaaaa"
             >
 
 
@@ -95,12 +106,13 @@
             android:text="Tamanho"
             android:id="@+id/tVTamanho"
             android:textColor="#000000"/>
+            <Spinner
+                android:id="@+id/spTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#888888"
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTTamanho"
-            android:textColor="#000000"/>
+                />
 
         <TextView
             android:layout_width="wrap_content"
@@ -115,18 +127,22 @@
             android:id="@+id/eTCor"
             android:textColor="#000000"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Estado de Conservação"
-            android:id="@+id/tVEstado"
-            android:textColor="#000000"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTEstado"
-            android:textColor="#000000"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado de Conservação"
+                android:id="@+id/tVEstado"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spEstCons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#888888"
+
+                />
 
         <TextView
             android:layout_width="wrap_content"
@@ -139,7 +155,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/eTPreco"
-            android:textColor="#000000"/>
+            android:textColor="#000000"
+            android:inputType="text"
+
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -148,22 +167,31 @@
             android:id="@+id/tVIONG"
             android:textColor="#000000"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTIONG"
-            android:textColor="#000000"/>
+            <Spinner
+                android:id="@+id/spOng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#888888"
+
+                />
 
     </LinearLayout>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
     <Button
         android:layout_width="132dp"
         android:layout_height="wrap_content"
         android:text="Voltar"
         android:id="@+id/btnVoltar"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        />
 
     <Button
         android:layout_width="132dp"
@@ -171,8 +199,8 @@
         android:text="Cadastrar"
         android:id="@+id/btnCadastrar"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/linearLayout"
         android:textColor="#000000"/>
+</LinearLayout>
     </LinearLayout>
     </ScrollView>
 </RelativeLayout>

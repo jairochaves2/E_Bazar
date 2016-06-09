@@ -49,17 +49,42 @@ public class CadastroDAO {
         cursor= db.rawQuery(sql, new String[]{usuario, senha});
 
         ArrayList<String> itens=null;
-
+        int cont=0;
         if (cursor != null && cursor.moveToFirst()){
             itens = new ArrayList<String>();
 
             do {
-                itens.add(cursor.getString(0));
-                itens.add(cursor.getString(1));
+                itens.add(cursor.getString(cont));
+                cont++;
             }while (cursor.moveToNext());
             return itens;
         }
+
         db.close();
         return null;
     }
+    public ArrayList<String> getNome(){
+
+
+        SQLiteDatabase db=bdHelper.getReadableDatabase();
+        String sql="select nome from cadastro";
+        Cursor cursor;
+        cursor= db.rawQuery(sql, null);
+
+        ArrayList<String> itens=null;
+        int cont=0;
+        if (cursor != null && cursor.moveToFirst()){
+            itens = new ArrayList<String>();
+            itens.add("Selecione");
+            do {
+                itens.add(cursor.getString(cont));
+                cont++;
+            }while (cursor.moveToNext());
+            return itens;
+        }
+
+        db.close();
+        return null;
+    }
+
 }

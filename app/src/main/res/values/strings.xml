@@ -2,4 +2,20 @@
     <string name="app_name">e-Bazar</string>
     <string name="login_label">Login</string>
     <string name="senha_label">Senha</string>
+    <string-array name="tamanho">
+        <item>Selecione</item>
+        <item>PP</item>
+        <item>P</item>
+        <item>M</item>
+        <item>G</item>
+        <item>GG</item>
+    </string-array>
+
+    <string-array name="estado_conservacao">
+        <item>Selecione</item>
+        <item>Novo</item>
+        <item>Seminovo</item>
+        <item>Velho</item>
+    </string-array>
+
 </resources>
