@@ -3,8 +3,10 @@ package com.example.rafael.e_bazar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import dao.CadastroDAO;
@@ -13,25 +15,34 @@ public class Cadastro_Ong extends Activity {
 
     Button btnVoltar;
     Button btnCadastrar;
+
+    Spinner spEstado;
+
     EditText etNome,etIntuito,etCidade,etEstado, etLogin,etSenha;
+
     String nome,intuito,cidade, estado,login, senha;
+
     CadastroDAO cadastro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_ong);
 
-        etNome=(EditText) findViewById(R.id.eTNO);
-        etIntuito=(EditText) findViewById(R.id.eTIntuito);
-        etCidade=(EditText) findViewById(R.id.eTcidade);
-        etEstado=(EditText) findViewById(R.id.eTEstado);
-        etLogin=(EditText) findViewById(R.id.eTLogin);
-        etSenha=(EditText) findViewById(R.id.eTSenha);
-
         btnVoltar = (Button) findViewById(R.id.btnVoltar);
         btnCadastrar = (Button) findViewById(R.id.btnCadastrar);
 
+        spEstado=(Spinner) findViewById(R.id.spEstado);
+
+        etNome=(EditText) findViewById(R.id.eTNO);
+        etIntuito=(EditText) findViewById(R.id.eTIntuito);
+        etCidade=(EditText) findViewById(R.id.eTcidade);
+        etLogin=(EditText) findViewById(R.id.eTLogin);
+        etSenha=(EditText) findViewById(R.id.eTSenha);
+
         cadastro=new CadastroDAO(this);
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,
+                getResources().getStringArray(R.array.estados));
+        spEstado.setAdapter(adapter);
 
 
         btnVoltar.setOnClickListener(new View.OnClickListener(){
@@ -47,7 +58,7 @@ public class Cadastro_Ong extends Activity {
                 nome=etNome.getText().toString();
                 intuito=etIntuito.getText().toString();
                 cidade=etCidade.getText().toString();
-                estado=etEstado.getText().toString();
+                estado=spEstado.getSelectedItem().toString();
                 login=etLogin.getText().toString();
                 senha=etSenha.getText().toString();
 
@@ -63,9 +74,9 @@ public class Cadastro_Ong extends Activity {
                     validacao=false;
                     etCidade.setError("Campo obrigatório");
 
-                }if (estado.equals("")||estado==null){
+                }if (estado.equals("Selecione")){
                     validacao=false;
-                    etEstado.setError("Campo obrigatório");
+                    Toast.makeText(Cadastro_Ong.this,"Escolha uma opção de Estado",Toast.LENGTH_LONG);
 
                 }if (login.equals("")||login==null){
                     validacao=false;
@@ -82,7 +93,6 @@ public class Cadastro_Ong extends Activity {
                     etNome.setText("");
                     etIntuito.setText("");
                     etCidade.setText("");
-                    etEstado.setText("");
                     etLogin.setText("");
                     etSenha.setText("");
                 }

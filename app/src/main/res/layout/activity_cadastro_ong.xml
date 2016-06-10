@@ -11,6 +11,10 @@
     android:background="#FFA500"
     android:orientation="vertical"
     tools:context="com.example.rafael.e_bazar.Cadastro_Ong">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -79,10 +83,10 @@
                 android:id="@+id/textView"
                 android:textColor="#000000"/>
 
-            <EditText
+            <Spinner
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/eTEstado"
+                android:id="@+id/spEstado"
                 android:layout_gravity="center_horizontal" />
             <!--Login-->
             <TextView
@@ -116,14 +120,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="30dp">
+        android:paddingTop="30dp"
+       >
             <Button
             android:layout_width="132dp"
             android:layout_height="wrap_content"
             android:text="      Voltar     "
             android:id="@+id/btnVoltar"
             android:layout_alignTop="@+id/btnCadastrar"
-            android:layout_alignStart="@+id/linearLayout2" />
+             />
 
             <Button
             android:layout_width="132dp"
@@ -131,8 +136,9 @@
             android:text="Cadastrar "
             android:id="@+id/btnCadastrar"
             android:layout_alignParentBottom="true"
-            android:layout_alignEnd="@+id/linearLayout2" />
+            />
 
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

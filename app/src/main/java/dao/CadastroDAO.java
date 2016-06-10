@@ -11,9 +11,6 @@ import com.example.rafael.e_bazar.Cadastro_Ong;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
-
 /**
  * Created by jairochaves on 06/06/16.
  */
@@ -27,7 +24,7 @@ public class CadastroDAO {
     }
     //insere os itens na tabela
     public void salvaCadastro(String nome, String intuito, String cidade, String estado, String login, String senha, TextView etLogin){
-        String sql = "INSERT INTO cadastro (nome, intuito, cidade, estado, login, senha) VALUES('"+nome+"', '"+intuito+"', '"+cidade+"',"+
+        String sql = "INSERT INTO cadastro_ong (nome, intuito, cidade, estado, login, senha) VALUES('"+nome+"', '"+intuito+"', '"+cidade+"',"+
                 "'"+estado+"', '"+login+"','"+senha+"')";
         SQLiteDatabase bd =bdHelper.getWritableDatabase();
 
@@ -44,7 +41,7 @@ public class CadastroDAO {
 
 
         SQLiteDatabase db=bdHelper.getReadableDatabase();
-        String sql="select login, senha from cadastro where login = ? and senha = ?";
+        String sql="select login, senha from cadastro_ong where login = ? and senha = ?";
         Cursor cursor;
         cursor= db.rawQuery(sql, new String[]{usuario, senha});
 
@@ -67,18 +64,18 @@ public class CadastroDAO {
 
 
         SQLiteDatabase db=bdHelper.getReadableDatabase();
-        String sql="select nome from cadastro";
-        Cursor cursor;
+        String sql="select nome from cadastro_ong";
+        Cursor cursor=null;
         cursor= db.rawQuery(sql, null);
 
         ArrayList<String> itens=null;
-        int cont=0;
+
         if (cursor != null && cursor.moveToFirst()){
             itens = new ArrayList<String>();
             itens.add("Selecione");
             do {
-                itens.add(cursor.getString(cont));
-                cont++;
+                itens.add(cursor.getString(0));
+
             }while (cursor.moveToNext());
             return itens;
         }

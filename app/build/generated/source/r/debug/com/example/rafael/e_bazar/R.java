@@ -22,7 +22,8 @@ public final class R {
     }
     public static final class array {
         public static final int estado_conservacao=0x7f0b0000;
-        public static final int tamanho=0x7f0b0001;
+        public static final int estados=0x7f0b0001;
+        public static final int tamanho=0x7f0b0002;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1620,9 +1621,9 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f02004d;
     }
     public static final class id {
-        public static final int CV=0x7f0d0075;
+        public static final int CV=0x7f0d0076;
         public static final int LV=0x7f0d0077;
-        public static final int Sair=0x7f0d0078;
+        public static final int Sair=0x7f0d0079;
         public static final int action0=0x7f0d0084;
         public static final int action_bar=0x7f0d0041;
         public static final int action_bar_activity_content=0x7f0d0000;
@@ -1643,18 +1644,12 @@ containing a value of this type.
         public static final int always=0x7f0d001c;
         public static final int beginning=0x7f0d0019;
         public static final int btnCadastrar=0x7f0d005f;
-        public static final int btnConfiguraçoes=0x7f0d0076;
+        public static final int btnConfiguraçoes=0x7f0d0078;
         public static final int btnLogin=0x7f0d0082;
         public static final int btnVoltar=0x7f0d005e;
         public static final int button2=0x7f0d0061;
         public static final int buttonPanel=0x7f0d002b;
         public static final int cancel_action=0x7f0d0085;
-        public static final int chBblusa=0x7f0d0066;
-        public static final int chBcalcado=0x7f0d006a;
-        public static final int chBmeia=0x7f0d0069;
-        public static final int chBsaia=0x7f0d0068;
-        public static final int chBvestido=0x7f0d0067;
-        public static final int chbCalca=0x7f0d0065;
         public static final int checkBox=0x7f0d0062;
         public static final int checkbox=0x7f0d0039;
         public static final int chronometer=0x7f0d008b;
@@ -1665,8 +1660,7 @@ containing a value of this type.
         public static final int decor_content_parent=0x7f0d003f;
         public static final int default_activity_button=0x7f0d0027;
         public static final int disableHome=0x7f0d000c;
-        public static final int eTCor=0x7f0d006e;
-        public static final int eTEstado=0x7f0d0059;
+        public static final int eTCor=0x7f0d0074;
         public static final int eTIntuito=0x7f0d0055;
         public static final int eTLista=0x7f0d007a;
         public static final int eTLogin=0x7f0d005b;
@@ -1707,6 +1701,12 @@ containing a value of this type.
         public static final int progress_circular=0x7f0d0005;
         public static final int progress_horizontal=0x7f0d0006;
         public static final int radio=0x7f0d003b;
+        public static final int rbBlusa=0x7f0d0066;
+        public static final int rbCalca=0x7f0d0065;
+        public static final int rbCalcado=0x7f0d006a;
+        public static final int rbMeia=0x7f0d0069;
+        public static final int rbSaia=0x7f0d0068;
+        public static final int rbVestido=0x7f0d0067;
         public static final int screen=0x7f0d0015;
         public static final int scrollIndicatorDown=0x7f0d0035;
         public static final int scrollIndicatorUp=0x7f0d0032;
@@ -1726,8 +1726,9 @@ containing a value of this type.
         public static final int showCustom=0x7f0d000f;
         public static final int showHome=0x7f0d0010;
         public static final int showTitle=0x7f0d0011;
-        public static final int spEstCons=0x7f0d0070;
-        public static final int spOng=0x7f0d0074;
+        public static final int spEstCons=0x7f0d006e;
+        public static final int spEstado=0x7f0d0059;
+        public static final int spOng=0x7f0d0070;
         public static final int spTamanho=0x7f0d006c;
         public static final int spacer=0x7f0d002c;
         public static final int split_action_bar=0x7f0d0007;
@@ -1737,10 +1738,10 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0d0086;
         public static final int submit_area=0x7f0d004c;
         public static final int tVC=0x7f0d0056;
-        public static final int tVCor=0x7f0d006d;
-        public static final int tVEstado=0x7f0d006f;
+        public static final int tVCor=0x7f0d0073;
+        public static final int tVEstado=0x7f0d006d;
         public static final int tVI=0x7f0d0054;
-        public static final int tVIONG=0x7f0d0073;
+        public static final int tVIONG=0x7f0d006f;
         public static final int tVNome=0x7f0d0052;
         public static final int tVPeca=0x7f0d0064;
         public static final int tVPreco=0x7f0d0071;
@@ -1755,7 +1756,7 @@ containing a value of this type.
         public static final int textView3=0x7f0d0060;
         public static final int textView4=0x7f0d005a;
         public static final int textView5=0x7f0d005c;
-        public static final int textView6=0x7f0d0079;
+        public static final int textView6=0x7f0d0075;
         public static final int time=0x7f0d008a;
         public static final int title=0x7f0d002a;
         public static final int title_template=0x7f0d002f;

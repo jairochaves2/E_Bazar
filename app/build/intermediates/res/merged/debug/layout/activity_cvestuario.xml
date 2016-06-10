@@ -15,192 +15,178 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#fff"
-        android:padding="10dp"
-        >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:padding="10dp">
         <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/linearLayout"
-        android:layout_above="@+id/btnVoltar">
-
-        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cadastro de Vestuário Usado"
-            android:id="@+id/tVTitulo"
-            android:textColor="#000000"
-            android:background="#0000ff"
-            android:gravity="center"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Peça"
-                android:id="@+id/tVPeca"
-                android:textColor="#000000"
-                android:layout_marginTop="15dp"
-                />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#aaaaaa"
-            >
-
-
-                <RadioButton
-                    android:layout_width="114dp"
-                    android:layout_height="wrap_content"
-                    android:text="Calça"
-                    android:id="@+id/chbCalca"
-                    android:checked="false" />
-
-                <RadioButton
-                    android:layout_width="114dp"
-                    android:layout_height="wrap_content"
-                    android:text="Blusa"
-                    android:id="@+id/chBblusa"
-                    android:checked="false" />
-
-                <RadioButton
-                    android:layout_width="114dp"
-                    android:layout_height="wrap_content"
-                    android:text="Vestido"
-                    android:id="@+id/chBvestido"
-                    android:checked="false" />
-
-
-                <RadioButton
-                    android:layout_width="114dp"
-                    android:layout_height="wrap_content"
-                    android:text="Saia"
-                    android:id="@+id/chBsaia"
-                    android:checked="false" />
-
-                <RadioButton
-                    android:layout_width="114dp"
-                    android:layout_height="wrap_content"
-                    android:text="Meia"
-                    android:id="@+id/chBmeia"
-                    android:checked="false" />
-
-                <RadioButton
-                    android:layout_width="114dp"
-                    android:layout_height="wrap_content"
-                    android:text="Calçado"
-                    android:id="@+id/chBcalcado"
-                    android:checked="false" />
-
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tamanho"
-            android:id="@+id/tVTamanho"
-            android:textColor="#000000"/>
-            <Spinner
-                android:id="@+id/spTamanho"
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#888888"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout"
+                android:layout_above="@+id/btnVoltar">
 
-                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastro de Vestuário Usado"
+                    android:id="@+id/tVTitulo"
+                    android:textColor="#000000"
+                    android:background="#0000ff"
+                    android:gravity="center" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cor"
-            android:id="@+id/tVCor"
-            android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peça"
+                    android:id="@+id/tVPeca"
+                    android:textColor="#000000"
+                    android:layout_marginTop="15dp" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#aaaaaa">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTCor"
-            android:textColor="#000000"/>
+
+                    <RadioButton
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calça"
+                        android:id="@+id/rbCalca"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:text="Blusa"
+                        android:id="@+id/rbBlusa"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vestido"
+                        android:id="@+id/rbVestido"
+                        android:checked="false" />
 
 
-            <TextView
+                    <RadioButton
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:text="Saia"
+                        android:id="@+id/rbSaia"
+                        android:checked="false" />
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Estado de Conservação"
-                android:id="@+id/tVEstado"
-                android:textColor="#000000"/>
+                    <RadioButton
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:text="Meia"
+                        android:id="@+id/rbMeia"
+                        android:checked="false" />
 
-            <Spinner
-                android:id="@+id/spEstCons"
+                    <RadioButton
+                        android:layout_width="114dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calçado"
+                        android:id="@+id/rbCalcado"
+                        android:checked="false" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tamanho"
+                    android:id="@+id/tVTamanho"
+                    android:textColor="#000000"/>
+                <Spinner
+                    android:id="@+id/spTamanho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#888888"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado de Conservação"
+                    android:id="@+id/tVEstado"
+                    android:textColor="#000000"/>
+
+                <Spinner
+                    android:id="@+id/spEstCons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#888888"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indicação de ONG"
+                    android:id="@+id/tVIONG"
+                    android:textColor="#000000"/>
+
+                <Spinner
+                    android:id="@+id/spOng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#888888"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preço"
+                    android:id="@+id/tVPreco"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eTPreco"
+                    android:textColor="#000000"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cor"
+                    android:id="@+id/tVCor"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eTCor"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#888888"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:text="Voltar"
+                    android:id="@+id/btnVoltar"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"/>
 
-                />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Preço"
-            android:id="@+id/tVPreco"
-            android:textColor="#000000"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/eTPreco"
-            android:textColor="#000000"
-            android:inputType="text"
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Indicação de ONG"
-            android:id="@+id/tVIONG"
-            android:textColor="#000000"/>
-
-            <Spinner
-                android:id="@+id/spOng"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#888888"
-
-                />
-
-    </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_gravity="center"
-    android:gravity="center"
-    >
-    <Button
-        android:layout_width="132dp"
-        android:layout_height="wrap_content"
-        android:text="Voltar"
-        android:id="@+id/btnVoltar"
-        android:layout_alignParentBottom="true"
-        android:textColor="#000000"
-        android:layout_gravity="center"
-        />
-
-    <Button
-        android:layout_width="132dp"
-        android:layout_height="wrap_content"
-        android:text="Cadastrar"
-        android:id="@+id/btnCadastrar"
-        android:layout_alignParentBottom="true"
-        android:textColor="#000000"/>
-</LinearLayout>
-    </LinearLayout>
+                <Button
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastrar"
+                    android:id="@+id/btnCadastrar"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 </RelativeLayout>
