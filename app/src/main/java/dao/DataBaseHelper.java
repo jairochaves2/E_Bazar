@@ -13,12 +13,11 @@ public class DataBaseHelper  extends SQLiteOpenHelper{
 
     //tabela que será criada
     private  static String  SQL_CADASTRO_ONG="CREATE TABLE cadastro_ong(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-            " nome TEXT NOT NULL," +
+            " nome TEXT NOT NULL UNIQUE," +
             " intuito TEXT NOT NULL," +
             " cidade TEXT NOT NULL," +
-            " estado TEXT NOT NULL," +
-            " login TEXT NOT NULL UNIQUE," +
-            " senha TEXT NOT NULL);";
+            " estado TEXT NOT NULL,"+
+            " valor_arrecadado TEXT);";
 
     //falta implementar
     private  static String  SQL_VESTUARIO="CREATE TABLE cadastro_vestuario(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
@@ -38,8 +37,8 @@ public class DataBaseHelper  extends SQLiteOpenHelper{
         //cria tabela
         db.execSQL(SQL_CADASTRO_ONG);
         db.execSQL(SQL_VESTUARIO);
-        db.execSQL("INSERT INTO cadastro_ong (nome, intuito, cidade, estado, login, senha) VALUES('nometeste', 'intuitoteste', 'cidadeteste'," +
-                " 'estadoteste', 'adm','123');");
+        db.execSQL("INSERT INTO cadastro_ong (nome, intuito, cidade, estado) VALUES('nometeste', 'intuitoteste', 'cidadeteste'," +
+                " 'estadoteste');");
     }
 
     @Override

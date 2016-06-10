@@ -18,9 +18,9 @@ public class Cadastro_Ong extends Activity {
 
     Spinner spEstado;
 
-    EditText etNome,etIntuito,etCidade,etEstado, etLogin,etSenha;
+    EditText etNome,etIntuito,etCidade;
 
-    String nome,intuito,cidade, estado,login, senha;
+    String nome,intuito,cidade, estado;
 
     CadastroDAO cadastro;
     @Override
@@ -31,13 +31,13 @@ public class Cadastro_Ong extends Activity {
         btnVoltar = (Button) findViewById(R.id.btnVoltar);
         btnCadastrar = (Button) findViewById(R.id.btnCadastrar);
 
-        spEstado=(Spinner) findViewById(R.id.spEstado);
+
 
         etNome=(EditText) findViewById(R.id.eTNO);
         etIntuito=(EditText) findViewById(R.id.eTIntuito);
         etCidade=(EditText) findViewById(R.id.eTcidade);
-        etLogin=(EditText) findViewById(R.id.eTLogin);
-        etSenha=(EditText) findViewById(R.id.eTSenha);
+        spEstado=(Spinner) findViewById(R.id.spEstado);
+
 
         cadastro=new CadastroDAO(this);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,
@@ -59,8 +59,6 @@ public class Cadastro_Ong extends Activity {
                 intuito=etIntuito.getText().toString();
                 cidade=etCidade.getText().toString();
                 estado=spEstado.getSelectedItem().toString();
-                login=etLogin.getText().toString();
-                senha=etSenha.getText().toString();
 
                 if (nome.equals("")||nome==null){
                     validacao=false;
@@ -76,25 +74,15 @@ public class Cadastro_Ong extends Activity {
 
                 }if (estado.equals("Selecione")){
                     validacao=false;
-                    Toast.makeText(Cadastro_Ong.this,"Escolha uma opção de Estado",Toast.LENGTH_LONG);
-
-                }if (login.equals("")||login==null){
-                    validacao=false;
-                    etLogin.setError("Campo obrigatório");
-
-                }if (senha.equals("")||senha==null){
-                    validacao=false;
-                    etSenha.setError("Campo obrigatório");
+                    Toast.makeText(Cadastro_Ong.this,"Escolha uma opção de Estado",Toast.LENGTH_LONG).show();
 
                 }
 
                 if (validacao) {
-                    cadastro.salvaCadastro(nome, intuito, cidade, estado, login, senha, etLogin);
+                    cadastro.salvaCadastro(nome, intuito, cidade, estado,etNome);
                     etNome.setText("");
                     etIntuito.setText("");
                     etCidade.setText("");
-                    etLogin.setText("");
-                    etSenha.setText("");
                 }
 
 

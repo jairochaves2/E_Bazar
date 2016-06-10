@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,42 +24,18 @@ public class CadastroDAO {
 
     }
     //insere os itens na tabela
-    public void salvaCadastro(String nome, String intuito, String cidade, String estado, String login, String senha, TextView etLogin){
-        String sql = "INSERT INTO cadastro_ong (nome, intuito, cidade, estado, login, senha) VALUES('"+nome+"', '"+intuito+"', '"+cidade+"',"+
-                "'"+estado+"', '"+login+"','"+senha+"')";
+    public void salvaCadastro(String nome, String intuito, String cidade, String estado, EditText etnome){
+
+        String sql = "INSERT INTO cadastro_ong (nome, intuito, cidade, estado) VALUES('"+nome+"', '"+intuito+"', '"+cidade+"',"+
+                "'"+estado+"')";
         SQLiteDatabase bd =bdHelper.getWritableDatabase();
 
         try {
             bd.execSQL(sql);
         }catch (Exception e){
-            etLogin.setError("Usuário já Existente");
+            etnome.setError("ONG já cadastrada");
         }
         bd.close();
-    }
-
-    //busca no banco de dados se existe algum usuario e senha igual ao que foi digitado
-    public ArrayList<String> getUserPass(String usuario, String senha){
-
-
-        SQLiteDatabase db=bdHelper.getReadableDatabase();
-        String sql="select login, senha from cadastro_ong where login = ? and senha = ?";
-        Cursor cursor;
-        cursor= db.rawQuery(sql, new String[]{usuario, senha});
-
-        ArrayList<String> itens=null;
-        int cont=0;
-        if (cursor != null && cursor.moveToFirst()){
-            itens = new ArrayList<String>();
-
-            do {
-                itens.add(cursor.getString(cont));
-                cont++;
-            }while (cursor.moveToNext());
-            return itens;
-        }
-
-        db.close();
-        return null;
     }
     public ArrayList<String> getNome(){
 
@@ -85,3 +62,46 @@ public class CadastroDAO {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//busca no banco de dados se existe algum usuario e senha igual ao que foi digitado
+    /*public ArrayList<String> getUserPass(String usuario, String senha){
+
+
+        SQLiteDatabase db=bdHelper.getReadableDatabase();
+        String sql="select login, senha from cadastro_ong where login = ? and senha = ?";
+        Cursor cursor;
+        cursor= db.rawQuery(sql, new String[]{usuario, senha});
+
+        ArrayList<String> itens=null;
+        int cont=0;
+        if (cursor != null && cursor.moveToFirst()){
+            itens = new ArrayList<String>();
+
+            do {
+                itens.add(cursor.getString(cont));
+                cont++;
+            }while (cursor.moveToNext());
+            return itens;
+        }
+
+        db.close();
+        return null;
+    }*/

@@ -21,6 +21,7 @@
         android:layout_height="match_parent"
         android:background="#ffffff"
         android:padding="10dp"
+        android:layout_gravity="center"
         >
         <LinearLayout
             android:orientation="vertical"
@@ -88,30 +89,6 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/spEstado"
                 android:layout_gravity="center_horizontal" />
-            <!--Login-->
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:id="@+id/textView4"
-                android:textColor="#000000" />
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/eTLogin" />
-            <!--Senha-->
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Senha"
-                android:id="@+id/textView5"
-                android:textColor="#000000"/>
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/eTSenha" />
 
         </LinearLayout>
     <LinearLayout

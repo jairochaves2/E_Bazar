@@ -4,7 +4,7 @@
     api-level="16"
     density="hdpi"
     format="7"
-    timestamp="20653629091404" >
+    timestamp="15412374055263" >
 
     <task
         name="javac"
@@ -20,18 +20,13 @@
         duration="0" />
 
     <artifact
-        location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
+        location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="20432194998127" >
+    <build timestamp="15412374055263" >
         <artifact
             location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="20653629091404" >
-        <artifact
-            location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

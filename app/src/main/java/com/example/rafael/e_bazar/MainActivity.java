@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
                 Slogin=et_login.getText().toString();
                 Ssenha=et_senha.getText().toString();
 
-                res=dataBaseManeger.getUserPass(Slogin,Ssenha);
+                //res=dataBaseManeger.getUserPass(Slogin,Ssenha);
 
 
                 if (res==null){

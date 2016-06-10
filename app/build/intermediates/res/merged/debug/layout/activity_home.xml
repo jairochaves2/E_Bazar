@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,15 +9,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#FFA500"
-    tools:context="com.example.rafael.e_bazar.Home">
 
+    tools:context="com.example.rafael.e_bazar.Home">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#fff"
-        android:padding="10dp"
-        >
+        android:padding="10dp" >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,28 +50,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Listagem de Vestuário"
-            android:layout_marginTop="15pt"
+            android:layout_marginTop="10pt"
             android:id="@+id/LV" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Configurações"
-            android:layout_marginTop="15pt"
+            android:layout_marginTop="10pt"
         android:id="@+id/btnConfiguraçoes" />
 
 
 
     </LinearLayout>
 
-    <Button
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar O.N.G"
+            android:id="@+id/btnCadOng"
+            android:layout_marginTop="10pt"
+
+            android:layout_gravity="center_horizontal" />
+
+        <Button
         android:layout_width="132dp"
         android:layout_height="wrap_content"
         android:text="Sair"
         android:id="@+id/Sair"
         android:layout_gravity="center"
-        android:layout_marginTop="15pt" />
+        android:layout_marginTop="10pt" />
     </LinearLayout>
+</ScrollView>
 
 
 </RelativeLayout>

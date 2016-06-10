@@ -12,6 +12,7 @@ public class Home extends Activity {
     Button btnSair;
     Button btnCVestuario;
     Button btnLVestuario;
+    Button btnCadOng;
 
 
     @Override
@@ -23,6 +24,7 @@ public class Home extends Activity {
         btnConfiguracoes = (Button) findViewById(R.id.btnConfiguraçoes);
         btnCVestuario = (Button) findViewById(R.id.CV);
         btnLVestuario =  (Button) findViewById(R.id.LV);
+        btnCadOng =  (Button) findViewById(R.id.btnCadOng);
         btnSair = (Button) findViewById(R.id.Sair);
 
         final Intent intent = new Intent();
@@ -49,6 +51,15 @@ public class Home extends Activity {
                 startActivity(intent);
             }
         });
+        btnCadOng.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1= new Intent();
+                intent1.setClass(Home.this,Cadastro_Ong.class);
+                startActivity(intent1);
+            }
+        });
+
 
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
