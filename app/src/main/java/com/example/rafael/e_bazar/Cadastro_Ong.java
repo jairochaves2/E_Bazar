@@ -79,6 +79,11 @@ public class Cadastro_Ong extends Activity {
                 }
 
                 if (validacao) {
+                    nome=primLetraMaiuscula(nome);
+                    intuito=primLetraMaiuscula(intuito);
+                    cidade=primLetraMaiuscula(cidade);
+
+
                     cadastro.salvaCadastro(nome, intuito, cidade, estado,etNome);
                     etNome.setText("");
                     etIntuito.setText("");
@@ -88,5 +93,31 @@ public class Cadastro_Ong extends Activity {
 
             }
         });
+    }
+
+
+    public String primLetraMaiuscula(String frase){
+        String x;
+        String w="";
+        String u="";
+
+        x=frase;
+        String z=x.charAt(0)+"";
+        z=z.toUpperCase();
+        if (x.length()>=1){
+
+            for (int i=1;i<x.length();i++){
+                if (x.charAt(i)!=' ')
+                    w+=x.charAt(i)+"";
+                else{
+                    u=x.charAt(i+1)+"";
+                    w+=" "+u.toUpperCase();
+                    i++;
+                }
+
+            }
+        }
+
+        return z+w;
     }
 }

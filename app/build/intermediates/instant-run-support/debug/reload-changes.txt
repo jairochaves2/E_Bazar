@@ -1,4 +1,0 @@
-CHANGED,/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/rafael/e_bazar/CVestuario$1$override.class
-CHANGED,/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/rafael/e_bazar/CVestuario$2$override.class
-CHANGED,/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/rafael/e_bazar/CVestuario$override.class
-CHANGED,/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
