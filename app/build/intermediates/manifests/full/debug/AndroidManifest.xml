@@ -37,6 +37,7 @@
         <activity android:name="com.example.rafael.e_bazar.Lista_Vestuario" />
         <activity android:name="com.example.rafael.e_bazar.Configuracoes" />
         <activity android:name="com.example.rafael.e_bazar.Home" />
+        <activity android:name="com.example.rafael.e_bazar.Lista_Ongs" />
         <activity android:name="com.example.rafael.e_bazar.Cadastro_Ong" />
     </application>
 

@@ -60,6 +60,31 @@ public class CadastroDAO {
         db.close();
         return null;
     }
+    public ArrayList<String> getOng(){
+
+
+        SQLiteDatabase db=bdHelper.getReadableDatabase();
+        String sql="select * from cadastro_ong";
+        Cursor cursor=null;
+        cursor= db.rawQuery(sql, null);
+
+        ArrayList<String> itens=null;
+
+        if (cursor != null && cursor.moveToFirst()){
+            itens = new ArrayList<String>();
+            do {
+                itens.add("Nome: "+cursor.getString(1));
+                itens.add("\nItuito: "+cursor.getString(2));
+                itens.add("\nCidade: "+cursor.getString(3));
+                itens.add("\nEstado: "+cursor.getString(4));
+                System.out.println("uma vez");
+            }while (cursor.moveToNext());
+            return itens;
+        }
+
+        db.close();
+        return null;
+    }
 
 }
 

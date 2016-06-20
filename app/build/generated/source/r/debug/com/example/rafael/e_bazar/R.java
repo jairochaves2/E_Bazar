@@ -1626,7 +1626,7 @@ containing a value of this type.
     public static final class id {
         public static final int CV=0x7f0d0072;
         public static final int LV=0x7f0d0073;
-        public static final int Sair=0x7f0d0076;
+        public static final int Sair=0x7f0d0077;
         public static final int action0=0x7f0d0083;
         public static final int action_bar=0x7f0d0041;
         public static final int action_bar_activity_content=0x7f0d0000;
@@ -1646,9 +1646,10 @@ containing a value of this type.
         public static final int alertTitle=0x7f0d0030;
         public static final int always=0x7f0d001c;
         public static final int beginning=0x7f0d0019;
-        public static final int btnCadOng=0x7f0d0075;
+        public static final int btnCadOng=0x7f0d0074;
         public static final int btnCadastrar=0x7f0d005b;
-        public static final int btnConfiguraçoes=0x7f0d0074;
+        public static final int btnConfiguraçoes=0x7f0d0076;
+        public static final int btnListOng=0x7f0d0075;
         public static final int btnListar=0x7f0d0078;
         public static final int btnLogin=0x7f0d0081;
         public static final int btnVoltar=0x7f0d005a;
@@ -1763,7 +1764,6 @@ containing a value of this type.
         public static final int title=0x7f0d002a;
         public static final int title_template=0x7f0d002f;
         public static final int topPanel=0x7f0d002e;
-        public static final int txVTitulo=0x7f0d0077;
         public static final int up=0x7f0d0008;
         public static final int useLogo=0x7f0d0012;
         public static final int withText=0x7f0d0020;
@@ -1806,22 +1806,23 @@ containing a value of this type.
         public static final int activity_configuracoes=0x7f04001a;
         public static final int activity_cvestuario=0x7f04001b;
         public static final int activity_home=0x7f04001c;
-        public static final int activity_lista__vestuario=0x7f04001d;
-        public static final int activity_listagem=0x7f04001e;
-        public static final int activity_main=0x7f04001f;
-        public static final int activity_splash=0x7f040020;
-        public static final int notification_media_action=0x7f040021;
-        public static final int notification_media_cancel_action=0x7f040022;
-        public static final int notification_template_big_media=0x7f040023;
-        public static final int notification_template_big_media_narrow=0x7f040024;
-        public static final int notification_template_lines=0x7f040025;
-        public static final int notification_template_media=0x7f040026;
-        public static final int notification_template_part_chronometer=0x7f040027;
-        public static final int notification_template_part_time=0x7f040028;
-        public static final int select_dialog_item_material=0x7f040029;
-        public static final int select_dialog_multichoice_material=0x7f04002a;
-        public static final int select_dialog_singlechoice_material=0x7f04002b;
-        public static final int support_simple_spinner_dropdown_item=0x7f04002c;
+        public static final int activity_lista__ongs=0x7f04001d;
+        public static final int activity_lista__vestuario=0x7f04001e;
+        public static final int activity_listagem=0x7f04001f;
+        public static final int activity_main=0x7f040020;
+        public static final int activity_splash=0x7f040021;
+        public static final int notification_media_action=0x7f040022;
+        public static final int notification_media_cancel_action=0x7f040023;
+        public static final int notification_template_big_media=0x7f040024;
+        public static final int notification_template_big_media_narrow=0x7f040025;
+        public static final int notification_template_lines=0x7f040026;
+        public static final int notification_template_media=0x7f040027;
+        public static final int notification_template_part_chronometer=0x7f040028;
+        public static final int notification_template_part_time=0x7f040029;
+        public static final int select_dialog_item_material=0x7f04002a;
+        public static final int select_dialog_multichoice_material=0x7f04002b;
+        public static final int select_dialog_singlechoice_material=0x7f04002c;
+        public static final int support_simple_spinner_dropdown_item=0x7f04002d;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

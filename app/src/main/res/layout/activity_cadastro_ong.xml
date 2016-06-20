@@ -12,16 +12,14 @@
     android:orientation="vertical"
     tools:context="com.example.rafael.e_bazar.Cadastro_Ong">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffffff"
         android:padding="10dp"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         >
         <LinearLayout
             android:orientation="vertical"
@@ -117,5 +115,5 @@
 
         </LinearLayout>
     </LinearLayout>
-    </ScrollView>
+
 </LinearLayout>

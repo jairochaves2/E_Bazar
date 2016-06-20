@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#FFA500"
-    tools:context="com.example.rafael.e_bazar.Lista_Vestuario">
+    tools:context="com.example.rafael.e_bazar.Lista_Ongs">
 
         <LinearLayout
             android:orientation="vertical"

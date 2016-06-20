@@ -31,6 +31,7 @@
         <activity android:name=".Lista_Vestuario" />
         <activity android:name=".Configuracoes" />
         <activity android:name=".Home" />
+        <activity android:name=".Lista_Ongs" />
         <activity android:name=".Cadastro_Ong"></activity>
     </application>
 
