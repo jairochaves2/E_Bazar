@@ -39,6 +39,7 @@
         <activity android:name="com.example.rafael.e_bazar.Home" />
         <activity android:name="com.example.rafael.e_bazar.Lista_Ongs" />
         <activity android:name="com.example.rafael.e_bazar.Cadastro_Ong" />
+        <activity android:name="com.example.rafael.e_bazar.ExcOng" />
     </application>
 
 </manifest>

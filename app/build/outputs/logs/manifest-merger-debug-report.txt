@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main
 		INJECTED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml
 		INJECTED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:5:5-36:19
+ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:5:5-37:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -83,9 +83,13 @@ ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main
 	android:name
 		ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:34:19-45
 activity#com.example.rafael.e_bazar.Cadastro_Ong
-ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:35:9-59
+ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:35:9-50
 	android:name
 		ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:35:19-47
+activity#com.example.rafael.e_bazar.ExcOng
+ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:36:9-53
+	android:name
+		ADDED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml:36:19-41
 uses-sdk
 INJECTED from /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] /home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78

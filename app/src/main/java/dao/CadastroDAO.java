@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.v7.app.AlertDialog;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,7 +52,9 @@ public class CadastroDAO {
             itens = new ArrayList<String>();
             itens.add("Selecione");
             do {
-                itens.add(cursor.getString(0));
+
+                    itens.add(cursor.getString(0));
+
 
             }while (cursor.moveToNext());
             return itens;
@@ -84,6 +87,18 @@ public class CadastroDAO {
 
         db.close();
         return null;
+    }
+    public void deletaOng(String nome){
+        SQLiteDatabase database;
+        database=bdHelper.getWritableDatabase();
+        String sql = "DELETE FROM cadastro_ong WHERE nome='"+nome+"';";
+        try{
+            database.execSQL(sql);
+        }
+        catch (Exception e){
+            //tratar excessao
+        }
+
     }
 
 }

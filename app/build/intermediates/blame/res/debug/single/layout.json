@@ -88,12 +88,12 @@
         "source": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
-    },
-    {
         "merged": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
@@ -182,5 +182,9 @@
     {
         "merged": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/merged/debug/layout/activity_exc_ong.xml",
+        "source": "/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/src/main/res/layout/activity_exc_ong.xml"
     }
 ]

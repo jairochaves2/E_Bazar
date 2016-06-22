@@ -4,34 +4,29 @@
     api-level="16"
     density="hdpi"
     format="7"
-    timestamp="15006807169146" >
+    timestamp="7837680254259" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="513" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="122" />
     <task
         name="verifier"
-        duration="0" />
+        duration="13" />
 
     <artifact
-        location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
+        location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="13817749771954" >
+    <build timestamp="7837680254259" >
         <artifact
-            location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="15006807169146" >
-        <artifact
-            location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
+            location="/home/jairochaves/AndroidStudioProjects/Trabalho/E_Bazar/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
     </build>
 
 </instant-run>

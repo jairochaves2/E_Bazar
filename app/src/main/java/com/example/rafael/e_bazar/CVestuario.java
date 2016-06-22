@@ -2,6 +2,7 @@ package com.example.rafael.e_bazar;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -34,6 +35,7 @@ public class CVestuario extends Activity {
     String indOng="";
     String preco="";
     String cor="";
+    boolean cadastrar=true;
 
 
     @Override
@@ -77,46 +79,63 @@ public class CVestuario extends Activity {
         spEstCons.setAdapter(adapter);
 
         //Nome das ongs cadastradas
-        ongs=new ArrayList<>();
-        ongs=cadastroDAO.getNome();
-        adapter=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, ongs);
-        spOng.setAdapter(adapter);
+        try {
+
+
+
+            ongs=new ArrayList<>();
+
+            ongs=cadastroDAO.getNome();
+
+            adapter=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, ongs);
+
+            spOng.setAdapter(adapter);
+            cadastrar=true;
+        }catch (NullPointerException e){
+            Toast.makeText(getApplicationContext(),"Sem ONG Cadastrada",Toast.LENGTH_LONG).show();
+            cadastrar=false;
+        }
 
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //peça
-                if (rbCalca.isChecked()){
-                    peca_roupa="Calça";
-                }if (rbSaia.isChecked()){
-                    peca_roupa="Saia";
-                }if (rbVestido.isChecked()){
-                    peca_roupa="Vestido";
-                }if (rbBlusa.isChecked()){
-                    peca_roupa="Blusa";
-                }if (rbMeia.isChecked()){
-                    peca_roupa="Meia";
-                }if (rbCalcado.isChecked()){
-                    peca_roupa="Calçado";
-                }
-                //tamanho
-                tamanho=spTamanho.getSelectedItem().toString();
-                estCons=spEstCons.getSelectedItem().toString();
-                indOng=spOng.getSelectedItem().toString();
-                preco=etPreco.getText().toString();
-                cor=etCor.getText().toString();
+                if (cadastrar){
+                    if (rbCalca.isChecked()){
+                        peca_roupa="Calça";
+                    }if (rbSaia.isChecked()){
+                        peca_roupa="Saia";
+                    }if (rbVestido.isChecked()){
+                        peca_roupa="Vestido";
+                    }if (rbBlusa.isChecked()){
+                        peca_roupa="Blusa";
+                    }if (rbMeia.isChecked()){
+                        peca_roupa="Meia";
+                    }if (rbCalcado.isChecked()){
+                        peca_roupa="Calçado";
+                    }
+                    //tamanho
+                    tamanho=spTamanho.getSelectedItem().toString();
+                    estCons=spEstCons.getSelectedItem().toString();
+                    indOng=spOng.getSelectedItem().toString();
+                    preco=etPreco.getText().toString();
+                    cor=etCor.getText().toString();
 
 
-                if (tamanho.equals("Selecione")||estCons.equals("Selecione")||indOng.equals("Selecione")||preco.equals("")||
-                        preco==null||cor.equals("")||cor==null){
-                    Toast.makeText(getApplicationContext(),"Verifique se os dados estão corretos", Toast.LENGTH_LONG).show();
-                    etPreco.setError("");
-                    etCor.setError("");
-                }else{
-                    vestuarioDAO.salvarVestuario(peca_roupa, tamanho, estCons, indOng, preco, cor);
-                    etPreco.setText("");
-                    etCor.setText("");
+                    if (tamanho.equals("Selecione")||estCons.equals("Selecione")||indOng.equals("Selecione")||preco.equals("")||
+                            preco==null||cor.equals("")||cor==null){
+                        Toast.makeText(getApplicationContext(),"Verifique se os dados estão corretos", Toast.LENGTH_LONG).show();
+                        etPreco.setError("");
+                        etCor.setError("");
+                    }else{
+                        vestuarioDAO.salvarVestuario(peca_roupa, tamanho, estCons, indOng, preco, cor);
+                        etPreco.setText("");
+                        etCor.setText("");
 
+                    }
+
+                }else {
+                    Toast.makeText(getApplicationContext(),"Não Existe ONG cadastrada, \nCadastre, e tente novamente",Toast.LENGTH_LONG).show();
                 }
 
 

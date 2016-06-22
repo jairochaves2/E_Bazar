@@ -29,8 +29,9 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:background="#0000ff"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:layout_marginBottom="30dp"
+        android:padding="10dp"
         android:textStyle="bold"
 
 
@@ -51,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Listagem de Vestuário"
-            android:layout_marginTop="10pt"
+            android:layout_marginTop="5pt"
             android:id="@+id/LV" />
 
         <Button
@@ -59,20 +60,20 @@
             android:layout_height="wrap_content"
             android:text="Cadastrar O.N.G"
             android:id="@+id/btnCadOng"
-            android:layout_marginTop="10pt"
+            android:layout_marginTop="5pt"
             android:layout_gravity="center_horizontal" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Listar O.N.G"
             android:id="@+id/btnListOng"
-            android:layout_marginTop="10pt"
+            android:layout_marginTop="5pt"
             android:layout_gravity="center_horizontal" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Configurações"
-            android:layout_marginTop="10pt"
+            android:layout_marginTop="5pt"
             android:id="@+id/btnConfiguraçoes" />
 
         <Button
@@ -81,7 +82,7 @@
             android:text="Sair"
             android:id="@+id/Sair"
             android:layout_gravity="center"
-            android:layout_marginTop="10pt" />
+            android:layout_marginTop="5dp" />
 
 
 

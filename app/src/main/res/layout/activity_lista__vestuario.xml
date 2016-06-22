@@ -28,9 +28,9 @@
                 android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@color/azul"
-                android:padding="3dp"
+                android:padding="10dp"
                 android:textStyle="bold"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:layout_marginBottom="15dp"
                 />
 
